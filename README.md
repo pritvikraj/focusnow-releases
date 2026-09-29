@@ -84,6 +84,23 @@ implicit TLS on port `465`, using `AUTH LOGIN` or `AUTH PLAIN`. FocusNow does
 not currently support STARTTLS on port `587`, OAuth-only accounts, or
 email-delivery APIs.
 
+## Current limitations
+
+FocusNow is still an early release. Core time tracking and reporting are the
+main focus; some newer or optional features may still have rough edges.
+
+- The standard Command-key shortcuts work while FocusNow is the active app.
+  Configurable global shortcuts are available under **Settings → Advanced**,
+  but should be considered experimental and may conflict with shortcuts
+  reserved by macOS or another app.
+- The optional Teams feature should also be considered experimental. It is
+  not a hosted FocusNow service: you must create and configure your own
+  compatible Supabase project, and behavior has not been validated across
+  every Supabase configuration.
+
+If you only need local time tracking, the dashboard, widget, reports, or MCP,
+you do not need to configure Supabase.
+
 ## Why the Terminal step is necessary
 
 FocusNow is currently ad-hoc signed rather than Developer ID signed and
